@@ -3,7 +3,7 @@ import java.io.IOException;
 public class TicTacToe {
 
     private static final int COLUMNS = 3;
-    private static final int ROWS = 3;
+    private static final int ROWS    = 3;
 
     private static String[][] table = {
             {"1", "2", "3"},
@@ -24,7 +24,7 @@ public class TicTacToe {
         while (!isExit) {
             readPlay();
             pcPlay();
-            isExit = checkGameStatus();
+            isExit = getGameStatus();
             printTable();
         }
     }
@@ -44,7 +44,7 @@ public class TicTacToe {
         }
     }
 
-    private static boolean checkGameStatus() {
+    private static boolean getGameStatus() {
         return true;
     }
 
